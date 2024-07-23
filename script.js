@@ -14,5 +14,9 @@
             } catch (error) {
                 output.textContent = 'Error: ' + error.message;
             }
+    
+        }
+        function redirectToLink() {
+            window.location.href = 'https://github.com/DarkRai087'; 
         }
  
