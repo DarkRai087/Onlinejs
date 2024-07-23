@@ -24,11 +24,24 @@
             color: white;
         }
         .pro-button {
-            background-color: #252526;
-            border: 1px solid #d4d4d4;
-            color: #d4d4d4;
-            padding: 5px 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between icon and text */
+        }
+        
+        .pro-button i {
+            font-size: 20px; /* Size of the GitHub icon */
+        }
+        
+        .pro-button:hover {
+            background-color: #0056b3;
         }
         .main {
             display: flex;
