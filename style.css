@@ -33,11 +33,11 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 10px; /* Space between icon and text */
+            gap: 10px; 
         }
         
         .pro-button i {
-            font-size: 20px; /* Size of the GitHub icon */
+            font-size: 20px; 
         }
         
         .pro-button:hover {
