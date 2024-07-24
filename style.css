@@ -25,7 +25,7 @@ body, html {
 .logo {
     font-weight: bold;
     color: #e0e0e0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .pro-button {
@@ -128,8 +128,7 @@ body, html {
 }
 
 .btn-style {
-    background-color: #0078d4;
-    color: white;
+    background-color: #333333;
     border: none;
     padding: 8px 20px;
     border-radius: 5px;
@@ -138,29 +137,10 @@ body, html {
 }
 
 .btn-style:hover {
-    background-color: #005bb5;
+    background-color: #4c4c4c;
 }
 
-.clear-btn {
-    background-color: #f44336;
-}
 
-.clear-btn:hover {
-    background-color: #d32f2f;
-}
-
-.copy-btn {
-    background-color: #4caf50;
-}
-
-.copy-btn:hover {
-    background-color: #388e3c;
-}
-
-.run-btn {
-    background-color: #ff9800;
-}
-
-.run-btn:hover {
-    background-color: #f57c00;
+.fas {
+    color: #e0e0e0;
 }
