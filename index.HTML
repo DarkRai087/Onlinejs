@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">DarkRai</div>
+            <div class="logo">Javascript Online Complier</div>
             <button class="pro-button" onclick="redirectToLink()"> <i class="fab fa-github"></i>GitHub</button>
         </div>
         <div class="main">
@@ -24,9 +24,12 @@
                 <div class="editor-container">
                     <div class="file-tab">Script.js
                         <div class="buttons">
-                            <button class="btn-style clear-btn" onclick="clearCode()"><i class="fas fa-eraser"></i> Clear</button>
-                            <button class="btn-style copy-btn" onclick="copyCode()"><i class="fa-regular fa-copy"></i></button>
-                            <button class="btn-style run-btn" onclick="runCode()"><i class="fa-solid fa-play"></i></button>
+
+                            <button class="btn-style imp-btn" onclick="impCode()" title="Import"><i class="fas fa-download"></i></button>
+                            <button class="btn-style clear-btn" onclick="clearCode()" title="Clear"><i class="fas fa-eraser"></i></button>
+                            <button class="btn-style copy-btn" onclick="copyCode()" title="Copy"><i class="fas fa-copy"></i></button>
+                            <button class="btn-style run-btn" onclick="runCode()" title="Run"><i class="fas fa-play"></i></button>
+
                         </div>
                     </div>
                     <textarea id="code-area" spellcheck="false">

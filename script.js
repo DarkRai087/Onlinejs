@@ -30,3 +30,23 @@ function copyCode() {
     codeArea.setSelectionRange(0, 99999); // For mobile devices
     document.execCommand('copy');
 }
+
+function impCode() {
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = '.txt,.js';
+
+    fileInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const contents = e.target.result;
+                document.getElementById('code-area').value = contents;
+            };
+            reader.readAsText(file);
+        }
+    });
+
+    fileInput.click();
+}
