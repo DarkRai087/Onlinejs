@@ -127,7 +127,7 @@ body, html {
     border-radius: 0 0 10px 10px;
 }
 
-.run-button {
+.btn-style {
     background-color: #0078d4;
     color: white;
     border: none;
@@ -137,6 +137,30 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-.run-button:hover {
+.btn-style:hover {
     background-color: #005bb5;
+}
+
+.clear-btn {
+    background-color: #f44336;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+
+.copy-btn {
+    background-color: #4caf50;
+}
+
+.copy-btn:hover {
+    background-color: #388e3c;
+}
+
+.run-btn {
+    background-color: #ff9800;
+}
+
+.run-btn:hover {
+    background-color: #f57c00;
 }
