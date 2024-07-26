@@ -1,3 +1,4 @@
+
 async function runCode() {
     const code = document.getElementById('code-area').value;
     const output = document.getElementById('output');
@@ -10,7 +11,6 @@ async function runCode() {
             oldLog.apply(console, args);
         };
 
-        // Use async Function constructor for supporting asynchronous code
         const script = new Function(`return (async () => { ${code} })()`);
         await script();
 
@@ -32,7 +32,7 @@ function clearCode() {
 function copyCode() {
     const codeArea = document.getElementById('code-area');
     codeArea.select();
-    codeArea.setSelectionRange(0, 99999); // For mobile devices
+    codeArea.setSelectionRange(0, 99999); 
     document.execCommand('copy');
 }
 
@@ -54,4 +54,13 @@ function impCode() {
     });
 
     fileInput.click();
+}
+
+function formatCode() {
+    const codeArea = document.getElementById('code-area');
+    const formattedCode = prettier.format(codeArea.value, {
+        parser: "babel",
+        plugins: prettierPlugins,
+    });
+    codeArea.value = formattedCode;
 }
