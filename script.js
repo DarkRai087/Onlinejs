@@ -1,20 +1,25 @@
-function runCode() {
+async function runCode() {
     const code = document.getElementById('code-area').value;
     const output = document.getElementById('output');
     output.textContent = '';
+
     try {
         const oldLog = console.log;
         console.log = function(...args) {
             output.textContent += args.join(' ') + '\n';
             oldLog.apply(console, args);
         };
-        eval(code);
+
+        // Use async Function constructor for supporting asynchronous code
+        const script = new Function(`return (async () => { ${code} })()`);
+        await script();
+
         console.log = oldLog;
     } catch (error) {
         output.textContent = 'Error: ' + error.message;
     }
-
 }
+
 function redirectToLink() {
     window.location.href = 'https://github.com/DarkRai087/Onlinejs'; 
 }
