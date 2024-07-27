@@ -55,22 +55,7 @@ body, html {
     flex-grow: 1;
 }
 
-.sidebar {
-    width: 50px;
-    background-color: #252526;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-}
 
-.sidebar-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 15px;
-    background-color: #d4d4d4;
-    border-radius: 5px;
-}
 
 .content {
     display: flex;
