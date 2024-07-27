@@ -20,7 +20,7 @@ const runCode = async () => {
 };
 
 const redirectToLink = () => {
-    window.location.href = 'https://github.com/DarkRai087/Onlinejs';
+    window.location.href = 'https://github.com/DarkRai087';
 };
 
 const clearCode = () => {
